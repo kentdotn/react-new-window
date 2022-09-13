@@ -8,16 +8,14 @@
     "open",
     "popup"
   ],
-  "main": "lib/react-new-window.js",
-  "module": "es/react-new-window.js",
-  "browser": "umd/react-new-window.js",
+  "main": "dist/lib/react-new-window.js",
+  "module": "dist/es/react-new-window.js",
+  "browser": "dist/umd/react-new-window.js",
   "repository": "git@github.com:rmariuzzo/react-new-window.git",
   "author": "Rubens Mariuzzo <rubens@mariuzzo.com>",
   "license": "MIT",
   "files": [
-    "lib",
-    "es",
-    "umd",
+    "dist",
     "types"
   ],
   "types": "./types/NewWindow.d.ts",
@@ -59,7 +57,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "clean": "rimraf 'es' 'lib' 'umd' 'docs'",
+    "clean": "rimraf 'dist' 'docs'",
     "build-storybook": "cross-env NODE_ENV=test build-storybook -o docs",
     "lint": "eslint ./src",
     "postversion": "git push origin && git push origin --tags",
