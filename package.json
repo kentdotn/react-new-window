@@ -19,9 +19,6 @@
     "types"
   ],
   "types": "./types/NewWindow.d.ts",
-  "dependencies": {
-    "prop-types": "^15.7.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",

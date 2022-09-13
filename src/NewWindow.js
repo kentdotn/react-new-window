@@ -5,7 +5,6 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
 
 /**
  * The NewWindow class object.
@@ -187,20 +186,6 @@ class NewWindow extends React.PureComponent {
       onUnload(null)
     }
   }
-}
-
-NewWindow.propTypes = {
-  children: PropTypes.node,
-  url: PropTypes.string,
-  name: PropTypes.string,
-  title: PropTypes.string,
-  features: PropTypes.object,
-  onUnload: PropTypes.func,
-  onBlock: PropTypes.func,
-  onOpen: PropTypes.func,
-  center: PropTypes.oneOf(['parent', 'screen']),
-  copyStyles: PropTypes.bool,
-  closeOnUnmount: PropTypes.bool
 }
 
 /**
